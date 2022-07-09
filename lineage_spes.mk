@@ -28,6 +28,11 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
 
+#riceDroid Stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RICE_MAINTAINER := sayann70
+WITH_GMS := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Overlay
