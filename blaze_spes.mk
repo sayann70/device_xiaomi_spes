@@ -28,6 +28,10 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Blaze Official Stuff
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := sayann70
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Overlay
