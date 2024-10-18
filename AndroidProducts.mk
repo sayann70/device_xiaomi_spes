@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_spes.mk
+    $(LOCAL_DIR)/lineage_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_spes-user \
-    blaze_spes-userdebug \
-    blaze_spes-eng
+    lineage_spes-user \
+    lineage_spes-userdebug \
+    lineage_spes-eng
