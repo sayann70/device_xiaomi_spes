@@ -5,6 +5,7 @@ ro.config.vc_call_vol_steps=11
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
+bluetooth.device.default_name=Redmi Note 11
 bluetooth.hardware.power.idle_cur_ma=7
 bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.hardware.power.rx_cur_ma=75
