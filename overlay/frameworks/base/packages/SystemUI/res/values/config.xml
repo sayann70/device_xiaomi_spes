@@ -113,4 +113,6 @@
     <!--  ID for the camera that needs extra protection -->
     <string name="config_protectedCameraId" translatable="false">1</string>
 
+    <!-- Whether to play turbulence noise after clicking the play button --> 
+    <bool name="config_turbulenceNoise">false</bool>
 </resources>
