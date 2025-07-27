@@ -171,10 +171,10 @@ TARGET_LINUX_KERNEL_VERSION := 4.19
 TARGET_KERNEL_CLANG_VERSION := r522817
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/input_suspend
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
