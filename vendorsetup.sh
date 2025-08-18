@@ -13,8 +13,8 @@ rm -rf hardware/google/pixel/kernel_headers/Android.bp
 rm -rf hardware/lineage/compat/Android.bp
 
 # Kernel & Vendor Sources
-git clone --depth=1 https://github.com/sayann70/vendor_xiaomi_spes -b 16 vendor/xiaomi/spes
-git clone --depth=1 https://github.com/sayann70/kernel_xiaomi_spes -b 16 kernel/xiaomi/sm6225
+git clone --depth=1 https://github.com/halt-spesn/vendor_xiaomi_spes-16 -b 16 vendor/xiaomi/spes
+git clone --depth=1 https://github.com/halt-spesn/kernel_xiaomi_spes-16 -b 16 kernel/xiaomi/sm6225
 
 # Hardware/Xiaomi
 rm -fr hardware/xiaomi
