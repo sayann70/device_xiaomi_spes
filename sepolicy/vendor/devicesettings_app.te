@@ -15,6 +15,8 @@ allow devicesettings_app vendor_sysfs_battery_supply:dir search;
 allow devicesettings_app vendor_sysfs_battery_supply:file r_file_perms;
 
 allow devicesettings_app proc_stat:file { read open getattr };
+allow devicesettings_app sysfs_torch:dir search;
+allow devicesettings_app sysfs_torch:file { read write open getattr };
 
 allow devicesettings_app vendor_sysfs_kgsl_gpuclk:file { read open getattr };
 allow devicesettings_app vendor_sysfs_kgsl:file { read open getattr };
