@@ -100,3 +100,6 @@
 /proc/stat u:object_r:proc_stat:s0
 /sys/class/kgsl/kgsl-3d0/gpu_busy_percentage    u:object_r:vendor_sysfs_kgsl:s0
 /sys/class/kgsl/kgsl-3d0/temp                    u:object_r:vendor_sysfs_kgsl:s0
+
+#torch
+/sys/devices/virtual/leds/led:torch/brightness u:object_r:sysfs_torch:s0
