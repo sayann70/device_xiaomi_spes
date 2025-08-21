@@ -17,13 +17,9 @@ git clone --depth=1 https://github.com/halt-spesn/vendor_xiaomi_spes-16 -b 16 ve
 git clone --depth=1 https://github.com/halt-spesn/kernel_xiaomi_spes-16 -b 16 kernel/xiaomi/sm6225
 
 # Hardware/Xiaomi
-rm -fr hardware/xiaomi
 git clone https://github.com/spes-development/hardware_xiaomi hardware/xiaomi
 rm -fr hardware/xiaomi/vibrator/effect/Android.bp
 rm -fr hardware/xiaomi/hidl/touch/Android.bp
-
-# Debug Tools
-#git clone https://github.com/spes-development/hardware_samsung-extra_interfaces -b lineage-22 hardware/samsung-ext/interfaces
 
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
