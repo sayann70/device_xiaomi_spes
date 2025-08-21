@@ -169,6 +169,9 @@ PRODUCT_PACKAGES += \
     libexif \
     libexif.vendor
 
+PRODUCT_PACKAGES += \
+    DeviceAsWebcamSpes
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
@@ -181,11 +184,9 @@ PRODUCT_PACKAGES += \
 
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 USE_DEX2OAT_DEBUG := false
 
-# Debug Tools
-#$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
 # Display
 PRODUCT_PACKAGES += \
