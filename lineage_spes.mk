@@ -21,6 +21,8 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
 
+DERPFEST_BUILD_TYPE := Community
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Boot animaton
