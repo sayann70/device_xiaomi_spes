@@ -28,7 +28,6 @@
 #
 
 on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_q6_pdr audio_q6_notifier audio_snd_event audio_apr audio_adsp_loader audio_q6 audio_native audio_usf audio_pinctrl_lpi audio_swr audio_swr_ctrl audio_platform audio_stub audio_wcd_core audio_lct_pinctrl audio_aw87xxx audio_wcd9xxx audio_bolero_cdc audio_va_macro audio_rx_macro audio_tx_macro audio_mbhc audio_wcd937x audio_wcd937x_slave audio_pm2250_spmi audio_rouleur audio_rouleur_slave audio_machine_bengal
     write /proc/sys/kernel/sched_boost 1
 
 on init
@@ -132,16 +131,9 @@ on boot
     write /sys/module/cpu_boost/parameters/input_boost_ms 120
 
     # DT2W
+    write /sys/touchpanel/double_tap 1
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
-
-    # USB controller configuration
-    setprop vendor.usb.rndis.func.name "gsi"
-    setprop vendor.usb.rmnet.func.name "gsi"
-    setprop vendor.usb.rmnet.inst.name "rmnet"
-    setprop vendor.usb.dpl.inst.name "dpl"
-    setprop vendor.usb.qdss.inst.name "qdss"
-    setprop vendor.usb.controller 4e00000.dwc3
 
     # Sensors
     start vendor.sensors
@@ -157,8 +149,6 @@ on boot
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
-on property:vendor.usb.controller=*
-    setprop sys.usb.controller ${vendor.usb.controller}
 
 on property:init.svc.vendor.charger=running
     chown system system /sys/class/backlight/panel0-backlight/brightness
