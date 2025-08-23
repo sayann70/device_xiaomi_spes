@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2020 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 <resources>
-    <!-- Refresh Rate Settings -->
+    <!-- Add other string resources here -->
+
+    <!-- Add the missing string resources -->
+    <!-- Refresh Rate  -->
+    <string name="refresh_title">Refresh rate per-app</string>
+    <string name="refresh_summary">Set a specific refresh rate for each application</string>
     <string name="refresh_rate_tile_title">Refresh Rate</string>
-    <string name="refresh_title">App Refresh Rate</string>
-    <string name="refresh_summary">Adjust per-app maximum refresh rate</string>
-    <string name="refresh_default">Default</string>
-    <string name="refresh_standard">Standard (60Hz)</string>
-    <string name="refresh_high">High (90Hz)</string>
+    <string name="refresh_medium">(60 Hz)</string>
+    <string name="refresh_high">(90 Hz)</string>
+    <string name="refresh_default">(60/90 Hz)</string>
+	
+	    <!-- HBM settings -->
+    <string name="hbm_fragment_title">High brightness mode</string>
+    <string name="hbm_fragment_summary">Settings for HBM</string>
+    <string name="hbm_mode_title">HBM</string>
+    <string name="hbm_mode_summary">Enable peak luminance</string>
+    <string name="auto_hbm_title">Automatic HBM</string>
+    <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
+    <string name="auto_hbm_threshold_title"></string>
+    <string name="auto_hbm_threshold_summary">threshold (lux)</string>
+    <string name="hbm_disable_time_title"></string>
+    <string name="hbm_disable_time_summary">disable delay (seconds)</string>
+    <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
 
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Clear speaker</string>
@@ -30,25 +30,9 @@
 
     <!-- DC dimming settings -->
     <string name="dc_dimming_enable_title">DC Dimming</string>
-    <string name="dc_dimming_enable_summary">DC Dimming reduces eye strain in low light conditions (Note: reduce image quality)</string>
-    <string name="dc_dimming_enable_summary_not_supported">DC Dimming is not currently supported by the kernel</string>
+    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
+    <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
 
-    <!--Display settings fragment -->
-    <string name="display_settings_title">Custom display settings</string>
-    <string name="display_settings_summary">HBM, DC Dimming</string>
+    <string name="flashlight_tile_title">Low Power Torch</string>
 
-    <!-- HBM settings -->
-    <string name="hbm_mode_title">High Brightness Mode</string>
-    <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value. Which helps in improving visibility in direct sunlight</string>
-    <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
-
-    <!-- GameBar Overlay -->
-    <string name="game_overlay_title">GameBar</string>
-    <string name="game_overlay_summary">Enable the system overlay (FPS, Temp, etc.)</string>
-    <string name="overlay_permission_required">Overlay permission is required</string>
-    <string name="overlay_permission_granted">Overlay permission granted</string>
-    <string name="overlay_permission_denied">Overlay permission denied</string>
-    <string name="game_overlay_tile_label">GameBar</string>
-    <string name="game_overlay_tile_description">Toggle the game overlay</string>
 </resources>
-

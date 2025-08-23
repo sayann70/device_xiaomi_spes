@@ -7,6 +7,20 @@ allow system_app sysfs_zram:dir r_dir_perms;
 allow system_app sysfs_zram:file r_file_perms;
 allow system_app sysfs_msm_subsys:dir search;
 allow system_app proc_tp_gesture:file rw_file_perms;
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_torch:file { read write open getattr };
+r_dir_file(system_app, vendor_sysfs_graphics)
+
+allow system_app {
+    vendor_sysfs_graphics
+    sysfs_msm_subsys
+}:dir search;
+
+allow system_app {
+    vendor_sysfs_graphics
+}:file rw_file_perms;
+
+
 
 get_prop(system_app, vendor_persist_camera_prop)
 r_dir_file(system_app, vendor_sysfs_battery_supply)

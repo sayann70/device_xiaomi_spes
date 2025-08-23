@@ -170,7 +170,8 @@ PRODUCT_PACKAGES += \
     libexif.vendor
 
 PRODUCT_PACKAGES += \
-    DeviceAsWebcamSpes
+    DeviceAsWebcamSpes \
+    ApertureSpes
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -547,4 +548,11 @@ PRODUCT_BOOT_JARS += \
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    RefreshRateParts
+
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/parts/privapp-permissions-refresh-rate-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-refresh-rate-parts.xml
+
+# Remove unneeded packages
+PRODUCT_PACKAGES += \
+    RemovePackages
