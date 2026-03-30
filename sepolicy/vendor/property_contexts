@@ -60,6 +60,10 @@ vendor.sys.fp                                   u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor                                u:object_r:vendor_fp_prop:s0
 ro.hardware.fp.sideCap                          u:object_r:vendor_fp_prop:s0
 
+# Fling
+ro.max.fling_velocity                   u:object_r:exported_system_prop:s0
+ro.min.fling_velocity                   u:object_r:exported_system_prop:s0
+
 # Global
 ro.boot.factorybuild                            u:object_r:vendor_public_vendor_default_prop:s0
 ro.boot.hwversion                               u:object_r:vendor_public_vendor_default_prop:s0
